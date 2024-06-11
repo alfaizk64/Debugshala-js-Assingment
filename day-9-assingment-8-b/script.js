@@ -189,10 +189,10 @@
 
 // 15. Write a JavaScript program that accepts a string as input and swaps the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
 
-let str ='The Quick Brown Fox'
-let str1=str.split("").map(item=> (item===item.toUpperCase())?(item.toLowerCase()):item.toUpperCase()).join("")
+// let str ='The Quick Brown Fox'
+// let str1=str.split("").map(item=> (item===item.toUpperCase())?(item.toLowerCase()):item.toUpperCase()).join("")
 
-document.write(str1)
+// document.write(str1)
 
 
 
@@ -201,3 +201,58 @@ document.write(str1)
 //  let arr1=[6,7,8,9,10]
 //  let arr2=arr.concat(arr1)
 //  document.write(arr2)
+
+// 18. Write a JavaScript function that merges two arrays and removes all duplicate elements.
+
+// Test data :
+// var array1 = [1, 2, 3];
+// var array2 = [2, 30, 1];
+// console.log(merge_array(array1, array2));
+// [3, 2, 30, 1]
+
+// let array1 = [1, 2, 3,6,6];
+// let array2 = [2, 30, 1,6,6];
+// const mergFun=(arr,arr1)=>{
+//     let combinedArr=arr.concat(arr1)
+//     let emptArr=[]
+//      for(let i=0; i<combinedArr.length;i++){
+//    if(emptArr.indexOf(combinedArr[i])=== -1){
+//          emptArr.push(combinedArr[i])
+//    }
+     
+//     }
+//      return emptArr;
+// }
+// document.write(mergFun(array1,array2))
+
+
+
+// 19. Write a JavaScript function to remove a specific element from an array.
+
+// Test data :
+// console.log(remove_array_element([2, 5, 9, 6], 5));
+// [2, 9, 6]
+ 
+// let arr=[2, 5, 9, 6]
+// arr
+// const remove_array_element = (arr,elem)=>{
+//     let index=arr.indexOf(elem)
+//     if (index > -1){
+//         arr.splice(index,1)
+//         document.write(arr)
+//     }
+    
+// }
+// remove_array_element(arr,9)
+// 20. Write a JavaScript function to find an array containing a specific element.
+
+// Test data :
+// arr = [2, 5, 9, 6];
+// console.log(contains(arr, 5));
+// [True]
+
+// let arr = [2, 5, 9, 6];
+// const contains=(arr,elem)=>{
+//   return arr.includes(elem)
+// }
+// document.write(contains(arr,9))
