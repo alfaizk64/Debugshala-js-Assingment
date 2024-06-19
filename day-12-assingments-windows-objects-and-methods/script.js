@@ -75,8 +75,9 @@
 
 
 // 9. Declare two dates and compare that dates and check if they are equal or not .
-// let date1 = new Date("2022-12-31");
-// let date2 = new Date("2022-12-31");
+// let date1 = new Date("2022-12-25");
+// let date2 = new Date("2022-12-25");
+
 
 
 
