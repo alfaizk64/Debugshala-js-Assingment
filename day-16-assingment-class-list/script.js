@@ -57,32 +57,32 @@
         // 6. Image Swapping: Create an HTML page with an image element and two buttons (Next, Previous).Get references to the image element and both buttons.Store an array of image paths representing different images.Attach a click event listener to the Next button that:Increments a counter variable to keep track of the current image index within the image path array.
 
 
-//         let imgPath=document.getElementById("image-viewer")
-//         let nextBtn=document.getElementById("next-btn")
-//         let prevBtn=document.getElementById("prev-btn")
-//          let imgArray=[`https://plus.unsplash.com/premium_photo-1666789257876-176a05094875?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8`,
-//                        `https://images.unsplash.com/photo-1718879329566-82d40c4175d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8`,
-//                        `https://images.unsplash.com/photo-1719352354062-0a35d9db5773?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8`,
-//                        `https://plus.unsplash.com/premium_photo-1680546330986-7efea975e7ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8`,
-//                        `https://images.unsplash.com/photo-1719658415828-82c795a40bef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8`
-//         ]
-//    let currentImageIndex=0;  //keeps track of current image index
-// imgPath.src= imgArray[currentImageIndex]
-//    nextBtn.addEventListener("click",()=>{
-//     currentImageIndex++;
-//         if(currentImageIndex >= imgArray.length){    //if currentImageIndex value will be greater than or equal to array length than we will assign it to the 0 index
-//             currentImageIndex=0
-//         }
-//         imgPath.src=imgArray[currentImageIndex] //assigning the currentImageIndex value to the src of image tag
+        let imgPath=document.getElementById("image-viewer")
+        let nextBtn=document.getElementById("next-btn")
+        let prevBtn=document.getElementById("prev-btn")
+         let imgArray=[`https://plus.unsplash.com/premium_photo-1666789257876-176a05094875?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8`,
+                       `https://images.unsplash.com/photo-1718879329566-82d40c4175d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8`,
+                       `https://images.unsplash.com/photo-1719352354062-0a35d9db5773?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8`,
+                       `https://plus.unsplash.com/premium_photo-1680546330986-7efea975e7ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8`,
+                       `https://images.unsplash.com/photo-1719658415828-82c795a40bef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8`
+        ]
+   let currentImageIndex=0;  //keeps track of current image index
+imgPath.src= imgArray[currentImageIndex]
+   nextBtn.addEventListener("click",()=>{
+    currentImageIndex++;
+        if(currentImageIndex >= imgArray.length){    //if currentImageIndex value will be greater than or equal to array length than we will assign it to the 0 index
+            currentImageIndex=0
+        }
+        imgPath.src=imgArray[currentImageIndex] //assigning the currentImageIndex value to the src of image tag
         
-//    })
-//    prevBtn.addEventListener("click",()=>{
-//     currentImageIndex--;
-//     if (currentImageIndex < 0) {
-//         currentImageIndex = imgArray.length-1
-//     }
-//     imgPath.src=imgArray[currentImageIndex]
-//    })
+   })
+   prevBtn.addEventListener("click",()=>{
+    currentImageIndex--;
+    if (currentImageIndex < 0) {
+        currentImageIndex = imgArray.length-1
+    }
+    imgPath.src=imgArray[currentImageIndex]
+   })
 
 // 7.Creating and Removing Elements:Create an HTML page with a button.Create a new paragraph element with some initial text content when the button is clicked using an event listener.
 // Append the newly created paragraph to a container element (e.g., div) on the page. When the user clicks on the paragraph itself, remove it from the document using event listeners.
